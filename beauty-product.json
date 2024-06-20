@@ -1,0 +1,55 @@
+{
+    "beauty_products": [
+      {
+        "product_name": "Radiant Glow Serum",
+        "price": 250000,
+        "description": "Serum wajah dengan vitamin C untuk kulit cerah dan bersinar."
+      },
+      {
+        "product_name": "Hydrating Face Moisturizer",
+        "price": 150000,
+        "description": "Pelembab wajah ringan yang melembabkan kulit sepanjang hari."
+      },
+      {
+        "product_name": "Volumizing Mascara",
+        "price": 120000,
+        "description": "Maskara yang memberikan volume maksimal dan tahan lama."
+      },
+      {
+        "product_name": "Matte Liquid Lipstick",
+        "price": 100000,
+        "description": "Lipstik cair dengan hasil akhir matte yang tahan lama dan tidak kering di bibir."
+      },
+      {
+        "product_name": "Nourishing Hair Oil",
+        "price": 180000,
+        "description": "Minyak rambut dengan kandungan argan oil untuk rambut halus dan berkilau."
+      },
+      {
+        "product_name": "Revitalizing Night Cream",
+        "price": 220000,
+        "description": "Krim malam yang menghidrasi dan memperbaiki kulit saat tidur."
+      },
+      {
+        "product_name": "Refreshing Facial Toner",
+        "price": 90000,
+        "description": "Toner wajah yang menyegarkan dan mengecilkan pori-pori."
+      },
+      {
+        "product_name": "Brightening Face Mask",
+        "price": 70000,
+        "description": "Masker wajah yang mencerahkan kulit dengan kandungan bahan alami."
+      },
+      {
+        "product_name": "Anti-Aging Eye Cream",
+        "price": 200000,
+        "description": "Krim mata yang mengurangi kerutan dan lingkaran hitam di bawah mata."
+      },
+      {
+        "product_name": "Gentle Exfoliating Scrub",
+        "price": 110000,
+        "description": "Scrub wajah yang lembut untuk mengangkat sel kulit mati dan mencerahkan kulit."
+      }
+    ]
+  }
+  
