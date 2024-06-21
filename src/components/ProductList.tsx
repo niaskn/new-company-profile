@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const ProductList = async() => {
 
-  const products = await getProducts()
+  const products: Product[] = await getProducts()
 
   console.log("products : ", products);
   return (
