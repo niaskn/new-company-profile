@@ -1,5 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
-
 import { Product } from "@/utils/interface/product";
 import { getProducts } from "@/api/product";
 import Image from "next/image";

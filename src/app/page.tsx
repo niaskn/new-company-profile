@@ -68,7 +68,7 @@ export default function Home() {
               What Our Beautygang say
             </h2>
             <blockquote>
-              <p>"This is the best product I have ever used!"</p>
+              <p>&quot;This is the best product I have ever used!&quot;</p>
               <cite>- Satisfied Customer</cite>
             </blockquote>
           </div>
