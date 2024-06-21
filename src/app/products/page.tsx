@@ -3,7 +3,7 @@ import ProductList from "@/components/ProductList"
 const ProductListCart = () => {
   return (
     <div>
-        <ProductList products={[]}/>
+        <ProductList/>
     </div>
   )
 }

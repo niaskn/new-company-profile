@@ -2,20 +2,10 @@ import { Product } from "@/utils/interface/product";
 import { getProducts } from "@/api/product";
 import Image from "next/image";
 
-export const getStaticProps = async () => {
-  const products: Product[] = await getProducts();
-  return {
-    props: {
-      products,
-    },
-  };
-};
+const ProductList = async() => {
 
-interface Props {
-  products: Product[];
-}
+  const products = await getProducts()
 
-const ProductList = ({ products }: Props) => {
   console.log("products : ", products);
   return (
     <main className="flex flex-col items-center">
