@@ -1,11 +1,28 @@
-import ProductList from "@/components/ProductList"
+// pages/products.tsx
+import { GetStaticProps } from 'next';
+import ProductList from '@/components/ProductList';
+import { Product } from '@/utils/interface/product';
+import { getProducts } from '@/api/product';
 
-const ProductListCart = () => {
-  return (
-    <div>
-        <ProductList/>
-    </div>
-  )
+interface ProductsPageProps {
+  products: Product[];
 }
 
-export default ProductListCart
+export const getStaticProps: GetStaticProps<ProductsPageProps> = async () => {
+  const products = await getProducts();
+  return {
+    props: {
+      products,
+    },
+  };
+};
+
+const ProductsPage: React.FC<ProductsPageProps> = ({ products }) => {
+  return (
+    <div>
+      <ProductList products={products} />
+    </div>
+  );
+};
+
+export default ProductsPage;

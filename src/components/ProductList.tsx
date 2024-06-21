@@ -1,19 +1,18 @@
 import { Product } from "@/utils/interface/product";
-import { getProducts } from "@/api/product";
 import Image from "next/image";
 
-const ProductList = async() => {
+interface ProductListProps {
+  products: Product[];
+}
 
-  const products: Product[] = await getProducts()
-
-  console.log("products : ", products);
+const ProductList: React.FC<ProductListProps> = ({ products }) => {
   return (
     <main className="flex flex-col items-center">
       <h1 className="text-4xl font-bold justify-center mt-20 my-10 flex text-pink-900">
         Products List
       </h1>
       <div className="grid grid-cols-3 gap-10">
-        {products.map((product: Product, index: number) => (
+        {products.map((product, index) => (
           <div className="flex-wrap rounded overflow-hidden shadow-lg p-2" key={index}>
             <ul>
               <li className="justify-center flex text-xl font-bold text-pink-900 mt-5">
@@ -23,7 +22,7 @@ const ProductList = async() => {
                 src={product.image}
                 width={300}
                 height={300}
-                alt="Picture"
+                alt={product.name}
                 className="w-52 h-52 mx-auto p-5"
               />
               <li className="w-52 h-52 mx-auto p-5 text-brown-100 text-base">
